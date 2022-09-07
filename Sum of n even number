@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class practice{
+    public static void main(String[] args) {
+          
+            System.out.println("Taking n even number.");
+            Scanner sc=new Scanner(System.in);
+            int n=sc.nextInt();
+            int sum=0;
+            for(int i=1;i<=n;i++){
+                sum=sum+2*i;
+            }
+            System.out.printf("Sum of n even number."+ sum);
+     }
+
+ }
