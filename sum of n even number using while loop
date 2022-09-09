@@ -1,0 +1,19 @@
+
+import java.util.Scanner;
+
+public class practice{
+    public static void main(String[] args) {
+        System.out.println("Taking  of n even number." ); 
+        Scanner neven = new Scanner(System.in);
+            int n=neven.nextInt();
+            int i=1,sum=0;
+            while(i<=n)
+            {
+                sum=sum+2*i;
+                i++;
+            }
+            
+            System.out.println("Sum of n even number."+ sum);
+     }
+
+ }
