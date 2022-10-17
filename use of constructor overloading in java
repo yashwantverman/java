@@ -1,0 +1,24 @@
+
+class Employe{
+    Employe(){
+        System.out.println("It show the profile of first employe.");
+    }
+    Employe(int a){
+        System.out.println("Show the first employe salary."+a);
+    }
+}
+class EmployeMy extends Employe{
+    EmployeMy(){
+        System.out.println("It shoe the second employe profile.");
+    }
+    EmployeMy(int a,int b){
+        super(a);
+        System.out.println("Show the second employe salary."+b);
+    }
+}
+public class overloading_constructor {
+    public static void main(String[] args) {
+        EmployeMy e=new EmployeMy(5000,6000);
+        EmployeMy e1=new EmployeMy();
+    }
+}
