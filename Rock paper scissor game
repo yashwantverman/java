@@ -1,0 +1,31 @@
+import java.util.Scanner;
+import java.util.Random;
+public class rockpaperscessior {
+    
+    public static void main(String[] args) {
+        System.out.println("Please choose the followoing number to play the game.");
+        System.out.println("0 for rock \n1 for paper\n2 for sessior");
+        Scanner n=new Scanner (System.in);
+        int  userinput=n.nextInt();
+
+        Random random =new Random();
+        int computerinput =random.nextInt(3);
+
+        if(userinput==computerinput){
+            System.out.println("Draw the game.");
+            }
+        else if(userinput==1 && computerinput==0 || userinput==2 && computerinput==1 ||userinput==0 && computerinput==2){
+            System.out.println("You win the game.");
+            }
+        else{
+                System.out.println("You loos the game.");
+            }
+
+        if(computerinput==0)
+            System.out.println("computer choice:Rock");
+        else if(computerinput==1)
+            System.out.println("comuter choice:Paper");
+        else 
+            System.out.println("computer choice:Scissor"); 
+    }
+}
